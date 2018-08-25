@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Airbooking</title>
+    <link href="https://fonts.googleapis.com/css?family=Gilda+Display|Open+Sans:300,400,600" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header__top">
+            <div>
+                <div class="menu" id="menu" onclick="myFunc()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="logo">Airbooking</div>
+            <div class="search">
+                <img src="img/search.png" alt="search">
+            </div>
+        </div>
+        <div class="header__main">
+            <div class="header__left">
+                <img src="img/fb.png" alt="facebook" id="fb">
+                <img src="img/tw.png" alt="twitter" id="tw">
+                <img src="img/in.png" alt="linkedIn" id="in">
+                <img src="img/insta.png" alt="instagram" id="insta">
+            </div>
+            <div class="header__right">
+                <h1>A Brand New Hotel<br>Beyond Ordinary</h1>
+                <a href="#">Explore it</a>
+                <div class="booking">
+                    <form>
+                        <div class="check_in">
+                            <span class="dc">Check in</span>
+                            <input type="number" value="16" min="1" max="31" name="numb" onkeypress="keyPress()" onkeyup="keyPress()">
+                            <select>
+                                <option>Jan</option>
+                                <option>feb</option>
+                                <option>mar</option>
+                                <option>apr</option>
+                                <option>may</option>
+                                <option>jun</option>
+                                <option>jul</option>
+                                <option>aug</option>
+                                <option>sep</option>
+                                <option>oct</option>
+                                <option>nov</option>
+                                <option>dec</option>
+                            </select>
+                        </div>
+                        <div class="check_out">
+                            <span>Check out</span>
+                            <input type="number" value="26" min="1" max="31" name="numb" onkeypress="keyPress()" onkeyup="keyPress()">
+                            <select>
+                                <option>Jan</option>
+                                <option>feb</option>
+                                <option>mar</option>
+                                <option>apr</option>
+                                <option>may</option>
+                                <option>jun</option>
+                                <option>jul</option>
+                                <option>aug</option>
+                                <option>sep</option>
+                                <option>oct</option>
+                                <option>nov</option>
+                                <option>dec</option>
+                            </select>
+                        </div>
+                        <div class="guest">
+                            <span>Guest</span>
+                            <input type="number" value="1" min="1" max="31" name="numb" onkeypress="keyPress()" onkeyup="keyPress()">
+                            <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="check">
+                            Check availability
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="rooms">
+        <h2>Our Rooms</h2>
+        <div class="rooms">
+            <div class="room">
+                <img src="img/room1.png" alt="room">
+                <a href="#">family room</a>
+                <span>from 30$</span>
+            </div>
+            <div class="room">
+                <img src="img/room2.png" alt="room">
+                <a href="#">luxary room</a>
+                <span>from 30$</span>
+            </div>
+            <div class="room">
+                <img src="img/room3.png" alt="room">
+                <a href="#">single room</a>
+                <span>from 30$</span>
+            </div>
+            <div class="room">
+                <img src="img/room4.png" alt="room">
+                <a href="#">double room</a>
+                <span>from 30$</span>
+            </div>
+            <div class="room">
+                <img src="img/room5.png" alt="room">
+                <a href="#">family room</a>
+                <span>from 30$</span>
+            </div>
+            <div class="room">
+                <img src="img/room6.png" alt="room">
+                <a href="#">family room</a>
+                <span>from 30$</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="bestroom">
+        <div class="best__main">
+            <div class="best__pic"></div>
+            <div class="best__descript">
+                <h5>Explorer Your Best Room</h5>
+                <p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et.
+                    Quisque euismod orci ut et lobortis. Phasellus enim libero.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service">
+                <img src="img/rest.png" alt="">
+                <h4>Restaurant</h4>
+                <p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et.
+                    Quisque euismod orci ut et lobortis.</p>
+            </div>
+            <div class="service">
+                <img src="img/sport.png" alt="">
+                <h4>Sports Club</h4>
+                <p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et.
+                    Quisque euismod orci ut et lobortis.</p>
+            </div>
+            <div class="service">
+                <img src="img/pick.png" alt="">
+                <h4>Pick Up</h4>
+                <p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et.
+                    Quisque euismod orci ut et lobortis.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="find__room">
+        <div></div>
+        <div>
+            <h2>Find Your Best Room Here</h2>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+<script src="script.js"></script>
+</body>
+</html>
