@@ -5,7 +5,7 @@ body {
     padding: 0;
 }
 .clearfix:after {
-    content: "";
+    content: "sds";
     display: table;
     clear: both;
 }
